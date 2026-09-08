@@ -4,8 +4,9 @@ on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: '05 10 * * *'  # 10:05am UTC everyday
+# disabling scheduled runs as deps need updating and I plan to re-clone this from the source as uBule has updated lots of things and starting over will be easier than merging changes in.
+#  schedule:
+#    - cron: '05 10 * * *'  # 10:05am UTC everyday
   push:
     branches:
       - main
